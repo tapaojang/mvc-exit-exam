@@ -7,7 +7,7 @@ def calculateBreasts(cowId):
         fourtothree = probfourtothree()
         print('fourtothree:', fourtothree)
         if fourtothree == False:
-            return 3
+            return 3 #change type from string to int
         else:
             return 4
     else:  

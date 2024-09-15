@@ -17,7 +17,7 @@ def get_cow_breasts(cowId):
             return c.get('CowBreasts')  
     return 'Not Found'  
 
-
+# remove leading and trailing whitespaces ex. goat not have age and breasts
 def clean_cow_data(cow):
     return {k.strip(): v for k, v in cow.items()}
 

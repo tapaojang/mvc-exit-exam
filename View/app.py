@@ -32,9 +32,9 @@ class MainWindow(QWidget):
         cowId = self.textbox.text()
         if cowId and cowId[0] != '0'and len(cowId) == 8 and isValidCow(cowId):
             # self.label.setText(f'Your cow id : {cowId} ')
-            if isCow(cowId):
+            if isCow(cowId): #cow or goat
                 self.label.setText(f'Your cow id : {cowId} is a cow')
-                breastsnum = calculateBreasts(cowId)
+                breastsnum = calculateBreasts(cowId) # 3 or 4 if 3 cannot milk else can milk
                 print('breastsnum in app:', breastsnum)
                 if breastsnum == 4:
                     print('Your cow id :', cowId, 'is a cow with 4 breasts')

@@ -2,7 +2,7 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QVBoxLayout, QWidget,QLineEdit, QPushButton
 from Controller.calculateMilk import calculateMilk
 class CowApp(QWidget):
-    totalMilk = 0
+    totalMilk = 0 # class variable to keep track of total milk
     def __init__(self, cowId):
         super().__init__()
         self.setWindowTitle("Milking App")
