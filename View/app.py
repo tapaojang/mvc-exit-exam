@@ -2,7 +2,6 @@ import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QVBoxLayout, QWidget,QLineEdit, QPushButton
 from Controller.isValidCow import isValidCow
 from Controller.isValidCow import isCow
-from Controller.isValidCow import isFourBreasts
 from View.cowApp import CowApp
 from View.goatApp import GoatApp
 from Controller.calculateBreasts import calculateBreasts
